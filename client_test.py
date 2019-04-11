@@ -18,12 +18,11 @@ s.connect((host,port))
 mac = get_mac()
 
 mac_n=str(mac)
-interations=["first","second", "third"]
-for x in interations:
+
 #get all three interations of the message to send and store to the file in the server 
     try:
     #mac=get_mac()
-        message =('Communication testing:'+x +'\n\tFrom MAC Address:'+mac_n)
+        message =('Communication testing:'+'\n\tFrom MAC Address:'+mac_n)
     #mac=str.encode(mac,'utf-8'))
         print("Sending ", message,"\n")
         s.sendall(message.encode('utf-8'))
