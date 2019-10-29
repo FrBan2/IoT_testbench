@@ -1,8 +1,3 @@
-# The focus of this is to get a server client communication established
-# where the client can send a message to a server and the server log
-# the data in the most basic communication
-# this is so we may troubleshoot the IOT Test bench communication and
-# locate the problem of why its waiting for communication
 import multiprocessing
 import socket
 import re
@@ -10,6 +5,13 @@ import sys
 import time
 import datetime
 import sqlite3
+
+# The focus of this is to get a server client communication established
+# where the client can send a message to a server and the server log
+# the data in the most basic communication
+# this is so we may troubleshoot the IOT Test bench communication and
+# locate the problem of why its waiting for communication
+
 # c.execute('''CREATE TABLE testing (Entry, Data, Client Address, Date Recieved)''')
 
 host = ''
