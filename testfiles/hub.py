@@ -10,8 +10,6 @@ import sqlite3
 # This hub can recieve communication from all the test clients, 
 # then store that data in one general database using SQLite
 
-# c.execute('''CREATE TABLE testing (Entry, Data, Client Address, Date Recieved)''')
-
 host = ''
 port = 8000
 
