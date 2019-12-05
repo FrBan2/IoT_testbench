@@ -24,12 +24,16 @@ SetUp AZURE
      * Server = Create new
        * Create a server Name Admin login credentials and choose location.
    * Review + Create
- 3. Create Table 
+ 3. Allowing access
+      * Home>>Server>>Firewalls and virtual Networks
+      * Insert Ip Address that you want to allow access 
+      
+ 4. Create Table 
    * Database >> Query editor >> (Login in with credentials)>> New Query
    ```
    CREATE TABLE CommLogs (Client nvarchar(46), Mac_Addr nvarchar(200), Occurance_Time nvarchar(100));
    ```
- 4. Create config.py 
+ 5. Create config.py 
  ```
  DATABASE_CONFIG = {
     'server': '<SERVERNAME>.database.windows.net',
@@ -40,13 +44,19 @@ SetUp AZURE
 }
 ```
  
- 5. Create client.py
+ 6. Install dependencies
   ```
-  pip install pyodbc
-  pip install pandas
-  pip install azure
-  pip install azure-cli
+  sudo apt-get install python-pyodbc
+  sudo apt-get install python-pandas 
   ```
+  Install ODBC Driver
+  Download driver from https://www.microsoft.com/en-us/download/confirmation.aspx?id=48742
+  ```
+  
+  ```
+ 6. create client.py
+ 
+ 
  Visualization
  ----------------
  1. Install node.js on Raspbian
