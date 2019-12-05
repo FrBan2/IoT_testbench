@@ -26,4 +26,25 @@ SetUp
    * Review + Create
  3. Create Table 
    * Database >> Query editor >> (Login in with credentials)>> New Query
-   *
+   ```
+   CREATE TABLE CommLogs (Client nvarchar(46), Mac_Addr nvarchar(200), Occurance_Time nvarchar(100));
+   ```
+ 4. Create config.py 
+ ```
+ DATABASE_CONFIG = {
+    'server': '<SERVERNAME>.database.windows.net',
+    'database': '<DATABASENAME>',
+    'username': '<USERNAME>@<SERVERNAME>.com',
+    'password': '<PASSWORD>',
+    'tablename': 'dbo.<TABLENAME>'
+}
+```
+ 
+ 5. Create client.py
+  ```
+  pip install pyodbc
+  pip install pandas
+  pip install azure
+  pip install azure-cli
+  ```
+  
