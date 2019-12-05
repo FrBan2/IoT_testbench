@@ -1,3 +1,9 @@
-IoT TestBench are multiple devices in contious communication with each other. The communication log is currently being stored through Microsoft Azure SQL. 
+The IoT TestBench is a DEPA Lab project that maintains the communication of multiple devices. Logs the Communication to Microsoft AZURE Sql. Uses the Data Stored to produce d3 visualization for  comprehensive data analysis.
 
 ## Resources
+Raspberry Pi
+Microsoft AZURE Account
+Python
+D3 
+
+
