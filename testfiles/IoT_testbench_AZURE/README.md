@@ -80,6 +80,16 @@ SetUp AZURE
    ```
    npm install d3
    ```
- 3. Open Browser to view file:///PATH/index.html
+ 3. Setup Azure Search Service 
+  * All services>>Search Services>> New Search Service
+  * Subscription: For Students or Free Trial
+     * Resource Group = Same as Above
+   * Instance Details:
+     * URL = Choose a name 
+     * Location = Crhoose Location
+   * Review + Create
+   
+ 4. Open Browser to view file:///PATH/index.html
+ 
  
  
