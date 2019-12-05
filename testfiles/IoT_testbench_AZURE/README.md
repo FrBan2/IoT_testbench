@@ -9,7 +9,7 @@ Resources
 * Python  
 * D3  
 
-SetUp
+SetUp AZURE
 ----------------------
 1. Create an AZURE account
    * https://portal.azure.com  
@@ -47,4 +47,29 @@ SetUp
   pip install azure
   pip install azure-cli
   ```
-  
+ Visualization
+ ----------------
+ 1. Install node.js on Raspbian
+   ```
+   curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+   sudo apt install nodejs
+   ```
+  * To verify the installation, run the following command which will print the Node.js version:
+  ```
+  node --version
+  ```
+  ```
+  Output:
+  v10.160.0
+  ```
+  * Development Tools install
+  ```
+  sudo apt install build-essential
+  ```
+2. Install d3 
+   ```
+   npm install d3
+   ```
+ 3. Open Browser to view file:///PATH/index.html
+ 
+ 
